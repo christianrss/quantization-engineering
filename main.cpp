@@ -1,4 +1,6 @@
 #include <array>
+#include <iostream>
+#include <cstdint>
 
 constexpr std::size_t kFeatureCount = 4;
 const std::array<std::string, kFeatureCount> feature_names = {
@@ -46,7 +48,7 @@ struct Int4PackedPair {
     std::string low_feature_name;
 
     std::uint8_t high_code;
-    std::unit8_t low_code;
+    std::uint8_t low_code;
     std::uint8_t packed_byte;
 
     float high_dequantized;
